@@ -322,11 +322,11 @@
     <!-- FOOTER -->
     <footer class="bg-#588fca text-center py-3 mt-5">
         <p>&copy; 2025 MaiMai Bataan. All rights reserved.</p>
-        <p>Follow us on <a href="https://discord.gg/6PshG5bJqg" class="text-primary">Discord</a></p>
+        <p>Follow us on <a href=process.env.DISCORD_LINK class="text-primary">Discord</a></p>
     </footer>
 
     <script>
-        const socket = io("https://bataan-maimai-v1-3.onrender.com");
+        const socket = io(process.env.RENDER_LINK_ID);
 
         function toggleAdminControls(show) {
             document.getElementById('admin-login').classList.toggle('d-none', show);

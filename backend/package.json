@@ -4,7 +4,7 @@
   "description": "Backend for Bataan MaiMai Community",
   "main": "queue_backend.js",
   "scripts": {
-    "start": "node queue_backend.js",
+    "start": "node backend/queue_backend.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
